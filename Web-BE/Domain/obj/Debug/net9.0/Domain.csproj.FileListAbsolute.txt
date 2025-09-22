@@ -1,0 +1,11 @@
+E:\Desktop\ASM1_PRN232\Web-BE\Domain\bin\Debug\net9.0\Domain.deps.json
+E:\Desktop\ASM1_PRN232\Web-BE\Domain\bin\Debug\net9.0\Domain.dll
+E:\Desktop\ASM1_PRN232\Web-BE\Domain\bin\Debug\net9.0\Domain.pdb
+E:\Desktop\ASM1_PRN232\Web-BE\Domain\obj\Debug\net9.0\Domain.GeneratedMSBuildEditorConfig.editorconfig
+E:\Desktop\ASM1_PRN232\Web-BE\Domain\obj\Debug\net9.0\Domain.AssemblyInfoInputs.cache
+E:\Desktop\ASM1_PRN232\Web-BE\Domain\obj\Debug\net9.0\Domain.AssemblyInfo.cs
+E:\Desktop\ASM1_PRN232\Web-BE\Domain\obj\Debug\net9.0\Domain.csproj.CoreCompileInputs.cache
+E:\Desktop\ASM1_PRN232\Web-BE\Domain\obj\Debug\net9.0\Domain.dll
+E:\Desktop\ASM1_PRN232\Web-BE\Domain\obj\Debug\net9.0\refint\Domain.dll
+E:\Desktop\ASM1_PRN232\Web-BE\Domain\obj\Debug\net9.0\Domain.pdb
+E:\Desktop\ASM1_PRN232\Web-BE\Domain\obj\Debug\net9.0\ref\Domain.dll

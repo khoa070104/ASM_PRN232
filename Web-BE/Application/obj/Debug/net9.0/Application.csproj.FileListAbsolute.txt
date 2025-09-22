@@ -1,0 +1,15 @@
+E:\Desktop\ASM1_PRN232\Web-BE\Application\obj\Debug\net9.0\Application.csproj.AssemblyReference.cache
+E:\Desktop\ASM1_PRN232\Web-BE\Application\obj\Debug\net9.0\Application.GeneratedMSBuildEditorConfig.editorconfig
+E:\Desktop\ASM1_PRN232\Web-BE\Application\obj\Debug\net9.0\Application.AssemblyInfoInputs.cache
+E:\Desktop\ASM1_PRN232\Web-BE\Application\obj\Debug\net9.0\Application.AssemblyInfo.cs
+E:\Desktop\ASM1_PRN232\Web-BE\Application\obj\Debug\net9.0\Application.csproj.CoreCompileInputs.cache
+E:\Desktop\ASM1_PRN232\Web-BE\Application\bin\Debug\net9.0\Application.deps.json
+E:\Desktop\ASM1_PRN232\Web-BE\Application\bin\Debug\net9.0\Application.dll
+E:\Desktop\ASM1_PRN232\Web-BE\Application\bin\Debug\net9.0\Application.pdb
+E:\Desktop\ASM1_PRN232\Web-BE\Application\bin\Debug\net9.0\Domain.dll
+E:\Desktop\ASM1_PRN232\Web-BE\Application\bin\Debug\net9.0\Domain.pdb
+E:\Desktop\ASM1_PRN232\Web-BE\Application\obj\Debug\net9.0\Applicat.44B5EDA2.Up2Date
+E:\Desktop\ASM1_PRN232\Web-BE\Application\obj\Debug\net9.0\Application.dll
+E:\Desktop\ASM1_PRN232\Web-BE\Application\obj\Debug\net9.0\refint\Application.dll
+E:\Desktop\ASM1_PRN232\Web-BE\Application\obj\Debug\net9.0\Application.pdb
+E:\Desktop\ASM1_PRN232\Web-BE\Application\obj\Debug\net9.0\ref\Application.dll
