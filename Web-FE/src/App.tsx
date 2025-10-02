@@ -11,6 +11,7 @@ function App() {
       <Route path="/products/:id" element={<ProductDetail />} />
       <Route path="/create" element={<ProductFormPage />} />
       <Route path="/edit/:id" element={<ProductFormPage />} />
+      <Route path="*" element={<div className="min-h-screen flex items-center justify-center text-gray-600">404 - Not Found</div>} />
     </Routes>
   )
 }

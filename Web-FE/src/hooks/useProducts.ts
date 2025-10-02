@@ -3,11 +3,23 @@ import { createProduct, deleteProduct, getProduct, getProducts, updateProduct } 
 import type { ProductCreate, ProductUpdate } from "../api/products";
 
 export function useProducts() {
-	return useQuery({ queryKey: ["products"], queryFn: getProducts });
+    return useQuery({
+        queryKey: ["products"],
+        queryFn: getProducts,
+        staleTime: 60_000,
+        gcTime: 5 * 60_000,
+        retry: 2,
+        refetchOnWindowFocus: false,
+    });
 }
 
 export function useProduct(id: string) {
-	return useQuery({ queryKey: ["products", id], queryFn: () => getProduct(id), enabled: !!id });
+    return useQuery({
+        queryKey: ["products", id],
+        queryFn: () => getProduct(id),
+        enabled: !!id,
+        staleTime: 60_000,
+    });
 }
 
 export function useCreateProduct() {

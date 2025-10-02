@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "E:\\Desktop\\ASM1_PRN232\\Web-BE\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{B0B791C3-F5E4-4DE1-A1B8-377E2FC19C05}|Api\\Api.csproj|e:\\desktop\\asm1_prn232\\web-be\\api\\api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{B0B791C3-F5E4-4DE1-A1B8-377E2FC19C05}|Api\\Api.csproj|solutionrelative:api\\api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{BB1E1F04-EB42-4253-AE65-5805E1A69B90}|Infrastructure\\Infrastructure.csproj|e:\\desktop\\asm1_prn232\\web-be\\infrastructure\\persistence\\migrations\\20250922084933_initialcreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{BB1E1F04-EB42-4253-AE65-5805E1A69B90}|Infrastructure\\Infrastructure.csproj|solutionrelative:infrastructure\\persistence\\migrations\\20250922084933_initialcreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -18,7 +22,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Bookmark",
@@ -38,7 +42,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
+              "Title": "Api",
+              "DocumentMoniker": "E:\\Desktop\\ASM1_PRN232\\Web-BE\\Api\\Api.csproj",
+              "RelativeDocumentMoniker": "Api\\Api.csproj",
+              "ToolTip": "E:\\Desktop\\ASM1_PRN232\\Web-BE\\Api\\Api.csproj",
+              "RelativeToolTip": "Api\\Api.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-09-24T06:08:38.854Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "ECommerceDbContextModelSnapshot.cs",
               "DocumentMoniker": "E:\\Desktop\\ASM1_PRN232\\Web-BE\\Infrastructure\\Persistence\\Migrations\\ECommerceDbContextModelSnapshot.cs",
               "RelativeDocumentMoniker": "Infrastructure\\Persistence\\Migrations\\ECommerceDbContextModelSnapshot.cs",
@@ -46,18 +63,17 @@
               "RelativeToolTip": "Infrastructure\\Persistence\\Migrations\\ECommerceDbContextModelSnapshot.cs",
               "ViewState": "AgIAAA4AAAAAAAAAAAAAwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-22T09:23:09.599Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-22T09:23:09.599Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "20250922084933_InitialCreate.cs",
               "DocumentMoniker": "E:\\Desktop\\ASM1_PRN232\\Web-BE\\Infrastructure\\Persistence\\Migrations\\20250922084933_InitialCreate.cs",
               "RelativeDocumentMoniker": "Infrastructure\\Persistence\\Migrations\\20250922084933_InitialCreate.cs",
               "ToolTip": "E:\\Desktop\\ASM1_PRN232\\Web-BE\\Infrastructure\\Persistence\\Migrations\\20250922084933_InitialCreate.cs",
               "RelativeToolTip": "Infrastructure\\Persistence\\Migrations\\20250922084933_InitialCreate.cs",
-              "ViewState": "AgIAACQAAAAAAAAAAAAYwAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-09-22T09:23:07.39Z",
               "EditorCaption": ""
