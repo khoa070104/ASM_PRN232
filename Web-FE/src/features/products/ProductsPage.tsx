@@ -4,6 +4,7 @@ import { Alert, Box, Button, Container, Dialog, DialogActions, DialogContent, Di
 import SearchIcon from "@mui/icons-material/Search";
 import { ProductsApi } from "./api";
 import { useNavigate } from "react-router-dom";
+import { MESSAGES } from "../../common/constants";
 import type { ProductCreateDto, ProductReadDto, ProductUpdateDto } from "./types";
 import ProductsTable from "./ProductsTable";
 import ProductForm from "./ProductForm";
@@ -56,13 +57,15 @@ export default function ProductsPage() {
 
 	return (
 		<Container sx={{ py: 3 }}>
-			<Stack direction="row" justifyContent="space-between" alignItems="center" mb={2}>
+            <Stack direction="row" justifyContent="space-between" alignItems="center" mb={2}>
 				<Stack direction="row" spacing={2} alignItems="center">
 					<Button onClick={() => navigate('/')}>Back</Button>
 					<Typography variant="h5">Products</Typography>
 				</Stack>
 				<Button variant="contained" onClick={() => setOpenCreate(true)}>Add</Button>
 			</Stack>
+
+            <Alert severity="info" sx={{ mb: 2 }}>{MESSAGES.RENDER_FREE_TIER}</Alert>
 
 			{listQuery.isError && (
 				<Alert severity="error">{(listQuery.error as any)?.message ?? "Lỗi tải dữ liệu"}</Alert>
