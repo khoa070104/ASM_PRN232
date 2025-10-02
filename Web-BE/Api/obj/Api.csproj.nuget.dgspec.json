@@ -1,24 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "E:\\Desktop\\ASM1_PRN232\\Web-BE\\Api\\Api.csproj": {}
+    "D:\\Documents\\ASM_PRN232\\Web-BE\\Api\\Api.csproj": {}
   },
   "projects": {
-    "E:\\Desktop\\ASM1_PRN232\\Web-BE\\Api\\Api.csproj": {
+    "D:\\Documents\\ASM_PRN232\\Web-BE\\Api\\Api.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\Desktop\\ASM1_PRN232\\Web-BE\\Api\\Api.csproj",
+        "projectUniqueName": "D:\\Documents\\ASM_PRN232\\Web-BE\\Api\\Api.csproj",
         "projectName": "Api",
-        "projectPath": "E:\\Desktop\\ASM1_PRN232\\Web-BE\\Api\\Api.csproj",
-        "packagesPath": "C:\\Users\\Khoa Bug\\.nuget\\packages\\",
-        "outputPath": "E:\\Desktop\\ASM1_PRN232\\Web-BE\\Api\\obj\\",
+        "projectPath": "D:\\Documents\\ASM_PRN232\\Web-BE\\Api\\Api.csproj",
+        "packagesPath": "C:\\Users\\NCPC\\.nuget\\packages\\",
+        "outputPath": "D:\\Documents\\ASM_PRN232\\Web-BE\\Api\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\Khoa Bug\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\NCPC\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -26,17 +22,18 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net9.0": {
             "targetAlias": "net9.0",
             "projectReferences": {
-              "E:\\Desktop\\ASM1_PRN232\\Web-BE\\Application\\Application.csproj": {
-                "projectPath": "E:\\Desktop\\ASM1_PRN232\\Web-BE\\Application\\Application.csproj"
+              "D:\\Documents\\ASM_PRN232\\Web-BE\\Application\\Application.csproj": {
+                "projectPath": "D:\\Documents\\ASM_PRN232\\Web-BE\\Application\\Application.csproj"
               },
-              "E:\\Desktop\\ASM1_PRN232\\Web-BE\\Infrastructure\\Infrastructure.csproj": {
-                "projectPath": "E:\\Desktop\\ASM1_PRN232\\Web-BE\\Infrastructure\\Infrastructure.csproj"
+              "D:\\Documents\\ASM_PRN232\\Web-BE\\Infrastructure\\Infrastructure.csproj": {
+                "projectPath": "D:\\Documents\\ASM_PRN232\\Web-BE\\Infrastructure\\Infrastructure.csproj"
               }
             }
           }
@@ -50,8 +47,7 @@
           "enableAudit": "true",
           "auditLevel": "low",
           "auditMode": "direct"
-        },
-        "SdkAnalysisLevel": "9.0.300"
+        }
       },
       "frameworks": {
         "net9.0": {
@@ -67,25 +63,25 @@
             },
             "Microsoft.AspNetCore.OpenApi": {
               "target": "Package",
-              "version": "[9.0.8, )"
+              "version": "[8.0.8, )"
             },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
-              "version": "[9.0.2, )"
+              "version": "[8.0.8, )"
             },
             "Microsoft.EntityFrameworkCore.Design": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
               "target": "Package",
-              "version": "[9.0.2, )"
+              "version": "[8.0.8, )"
             },
             "Microsoft.EntityFrameworkCore.Relational": {
               "target": "Package",
-              "version": "[9.0.2, )"
+              "version": "[8.0.8, )"
             },
             "Npgsql.EntityFrameworkCore.PostgreSQL": {
               "target": "Package",
-              "version": "[9.0.2, )"
+              "version": "[8.0.6, )"
             },
             "Serilog.AspNetCore": {
               "target": "Package",
@@ -119,25 +115,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.304/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "E:\\Desktop\\ASM1_PRN232\\Web-BE\\Application\\Application.csproj": {
+    "D:\\Documents\\ASM_PRN232\\Web-BE\\Application\\Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\Desktop\\ASM1_PRN232\\Web-BE\\Application\\Application.csproj",
+        "projectUniqueName": "D:\\Documents\\ASM_PRN232\\Web-BE\\Application\\Application.csproj",
         "projectName": "Application",
-        "projectPath": "E:\\Desktop\\ASM1_PRN232\\Web-BE\\Application\\Application.csproj",
-        "packagesPath": "C:\\Users\\Khoa Bug\\.nuget\\packages\\",
-        "outputPath": "E:\\Desktop\\ASM1_PRN232\\Web-BE\\Application\\obj\\",
+        "projectPath": "D:\\Documents\\ASM_PRN232\\Web-BE\\Application\\Application.csproj",
+        "packagesPath": "C:\\Users\\NCPC\\.nuget\\packages\\",
+        "outputPath": "D:\\Documents\\ASM_PRN232\\Web-BE\\Application\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\Khoa Bug\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\NCPC\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -145,14 +137,15 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net9.0": {
             "targetAlias": "net9.0",
             "projectReferences": {
-              "E:\\Desktop\\ASM1_PRN232\\Web-BE\\Domain\\Domain.csproj": {
-                "projectPath": "E:\\Desktop\\ASM1_PRN232\\Web-BE\\Domain\\Domain.csproj"
+              "D:\\Documents\\ASM_PRN232\\Web-BE\\Domain\\Domain.csproj": {
+                "projectPath": "D:\\Documents\\ASM_PRN232\\Web-BE\\Domain\\Domain.csproj"
               }
             }
           }
@@ -166,8 +159,7 @@
           "enableAudit": "true",
           "auditLevel": "low",
           "auditMode": "direct"
-        },
-        "SdkAnalysisLevel": "9.0.300"
+        }
       },
       "frameworks": {
         "net9.0": {
@@ -198,25 +190,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.304/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "E:\\Desktop\\ASM1_PRN232\\Web-BE\\Domain\\Domain.csproj": {
+    "D:\\Documents\\ASM_PRN232\\Web-BE\\Domain\\Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\Desktop\\ASM1_PRN232\\Web-BE\\Domain\\Domain.csproj",
+        "projectUniqueName": "D:\\Documents\\ASM_PRN232\\Web-BE\\Domain\\Domain.csproj",
         "projectName": "Domain",
-        "projectPath": "E:\\Desktop\\ASM1_PRN232\\Web-BE\\Domain\\Domain.csproj",
-        "packagesPath": "C:\\Users\\Khoa Bug\\.nuget\\packages\\",
-        "outputPath": "E:\\Desktop\\ASM1_PRN232\\Web-BE\\Domain\\obj\\",
+        "projectPath": "D:\\Documents\\ASM_PRN232\\Web-BE\\Domain\\Domain.csproj",
+        "packagesPath": "C:\\Users\\NCPC\\.nuget\\packages\\",
+        "outputPath": "D:\\Documents\\ASM_PRN232\\Web-BE\\Domain\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\Khoa Bug\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\NCPC\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -224,6 +212,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -241,8 +230,7 @@
           "enableAudit": "true",
           "auditLevel": "low",
           "auditMode": "direct"
-        },
-        "SdkAnalysisLevel": "9.0.300"
+        }
       },
       "frameworks": {
         "net9.0": {
@@ -263,25 +251,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.304/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "E:\\Desktop\\ASM1_PRN232\\Web-BE\\Infrastructure\\Infrastructure.csproj": {
+    "D:\\Documents\\ASM_PRN232\\Web-BE\\Infrastructure\\Infrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\Desktop\\ASM1_PRN232\\Web-BE\\Infrastructure\\Infrastructure.csproj",
+        "projectUniqueName": "D:\\Documents\\ASM_PRN232\\Web-BE\\Infrastructure\\Infrastructure.csproj",
         "projectName": "Infrastructure",
-        "projectPath": "E:\\Desktop\\ASM1_PRN232\\Web-BE\\Infrastructure\\Infrastructure.csproj",
-        "packagesPath": "C:\\Users\\Khoa Bug\\.nuget\\packages\\",
-        "outputPath": "E:\\Desktop\\ASM1_PRN232\\Web-BE\\Infrastructure\\obj\\",
+        "projectPath": "D:\\Documents\\ASM_PRN232\\Web-BE\\Infrastructure\\Infrastructure.csproj",
+        "packagesPath": "C:\\Users\\NCPC\\.nuget\\packages\\",
+        "outputPath": "D:\\Documents\\ASM_PRN232\\Web-BE\\Infrastructure\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\Khoa Bug\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\NCPC\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -289,17 +273,18 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net9.0": {
             "targetAlias": "net9.0",
             "projectReferences": {
-              "E:\\Desktop\\ASM1_PRN232\\Web-BE\\Application\\Application.csproj": {
-                "projectPath": "E:\\Desktop\\ASM1_PRN232\\Web-BE\\Application\\Application.csproj"
+              "D:\\Documents\\ASM_PRN232\\Web-BE\\Application\\Application.csproj": {
+                "projectPath": "D:\\Documents\\ASM_PRN232\\Web-BE\\Application\\Application.csproj"
               },
-              "E:\\Desktop\\ASM1_PRN232\\Web-BE\\Domain\\Domain.csproj": {
-                "projectPath": "E:\\Desktop\\ASM1_PRN232\\Web-BE\\Domain\\Domain.csproj"
+              "D:\\Documents\\ASM_PRN232\\Web-BE\\Domain\\Domain.csproj": {
+                "projectPath": "D:\\Documents\\ASM_PRN232\\Web-BE\\Domain\\Domain.csproj"
               }
             }
           }
@@ -313,8 +298,7 @@
           "enableAudit": "true",
           "auditLevel": "low",
           "auditMode": "direct"
-        },
-        "SdkAnalysisLevel": "9.0.300"
+        }
       },
       "frameworks": {
         "net9.0": {
@@ -324,11 +308,11 @@
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
               "target": "Package",
-              "version": "[9.0.2, )"
+              "version": "[8.0.8, )"
             },
             "Npgsql.EntityFrameworkCore.PostgreSQL": {
               "target": "Package",
-              "version": "[9.0.2, )"
+              "version": "[8.0.6, )"
             }
           },
           "imports": [
@@ -347,7 +331,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.304/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

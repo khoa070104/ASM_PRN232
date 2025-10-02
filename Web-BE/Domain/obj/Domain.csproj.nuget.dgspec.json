@@ -1,24 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "E:\\Desktop\\ASM1_PRN232\\Web-BE\\Domain\\Domain.csproj": {}
+    "D:\\Documents\\ASM_PRN232\\Web-BE\\Domain\\Domain.csproj": {}
   },
   "projects": {
-    "E:\\Desktop\\ASM1_PRN232\\Web-BE\\Domain\\Domain.csproj": {
+    "D:\\Documents\\ASM_PRN232\\Web-BE\\Domain\\Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\Desktop\\ASM1_PRN232\\Web-BE\\Domain\\Domain.csproj",
+        "projectUniqueName": "D:\\Documents\\ASM_PRN232\\Web-BE\\Domain\\Domain.csproj",
         "projectName": "Domain",
-        "projectPath": "E:\\Desktop\\ASM1_PRN232\\Web-BE\\Domain\\Domain.csproj",
-        "packagesPath": "C:\\Users\\Khoa Bug\\.nuget\\packages\\",
-        "outputPath": "E:\\Desktop\\ASM1_PRN232\\Web-BE\\Domain\\obj\\",
+        "projectPath": "D:\\Documents\\ASM_PRN232\\Web-BE\\Domain\\Domain.csproj",
+        "packagesPath": "C:\\Users\\NCPC\\.nuget\\packages\\",
+        "outputPath": "D:\\Documents\\ASM_PRN232\\Web-BE\\Domain\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\Khoa Bug\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\NCPC\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -26,6 +22,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -43,8 +40,7 @@
           "enableAudit": "true",
           "auditLevel": "low",
           "auditMode": "direct"
-        },
-        "SdkAnalysisLevel": "9.0.300"
+        }
       },
       "frameworks": {
         "net9.0": {
@@ -65,7 +61,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.304/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

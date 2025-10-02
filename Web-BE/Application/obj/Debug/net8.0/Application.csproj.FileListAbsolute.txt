@@ -1,0 +1,16 @@
+D:\Documents\ASM_PRN232\Web-BE\Application\bin\Debug\net8.0\Application.deps.json
+D:\Documents\ASM_PRN232\Web-BE\Application\bin\Debug\net8.0\Application.dll
+D:\Documents\ASM_PRN232\Web-BE\Application\bin\Debug\net8.0\Application.pdb
+D:\Documents\ASM_PRN232\Web-BE\Application\bin\Debug\net8.0\Domain.dll
+D:\Documents\ASM_PRN232\Web-BE\Application\bin\Debug\net8.0\Domain.pdb
+D:\Documents\ASM_PRN232\Web-BE\Application\obj\Debug\net8.0\Application.csproj.AssemblyReference.cache
+D:\Documents\ASM_PRN232\Web-BE\Application\obj\Debug\net8.0\Application.GeneratedMSBuildEditorConfig.editorconfig
+D:\Documents\ASM_PRN232\Web-BE\Application\obj\Debug\net8.0\Application.AssemblyInfoInputs.cache
+D:\Documents\ASM_PRN232\Web-BE\Application\obj\Debug\net8.0\Application.AssemblyInfo.cs
+D:\Documents\ASM_PRN232\Web-BE\Application\obj\Debug\net8.0\Application.csproj.CoreCompileInputs.cache
+D:\Documents\ASM_PRN232\Web-BE\Application\obj\Debug\net8.0\Application.sourcelink.json
+D:\Documents\ASM_PRN232\Web-BE\Application\obj\Debug\net8.0\Applicat.44B5EDA2.Up2Date
+D:\Documents\ASM_PRN232\Web-BE\Application\obj\Debug\net8.0\Application.dll
+D:\Documents\ASM_PRN232\Web-BE\Application\obj\Debug\net8.0\refint\Application.dll
+D:\Documents\ASM_PRN232\Web-BE\Application\obj\Debug\net8.0\Application.pdb
+D:\Documents\ASM_PRN232\Web-BE\Application\obj\Debug\net8.0\ref\Application.dll

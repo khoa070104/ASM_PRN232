@@ -1,19 +1,34 @@
-import { Routes, Route } from 'react-router-dom'
-import './App.css'
-import Home from './pages/Home'
-import ProductDetail from './pages/ProductDetail'
-import ProductFormPage from './pages/ProductFormPage'
+import { CssBaseline, ThemeProvider, createTheme } from "@mui/material";
+import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import ProductsPage from "./features/products/ProductsPage";
+import HomePage from "./components/HomePage";
 
-function App() {
-  return (
-    <Routes>
-      <Route path="/" element={<Home />} />
-      <Route path="/products/:id" element={<ProductDetail />} />
-      <Route path="/create" element={<ProductFormPage />} />
-      <Route path="/edit/:id" element={<ProductFormPage />} />
-      <Route path="*" element={<div className="min-h-screen flex items-center justify-center text-gray-600">404 - Not Found</div>} />
-    </Routes>
-  )
+const theme = createTheme({});
+const queryClient = new QueryClient({
+	defaultOptions: {
+		queries: {
+			refetchOnWindowFocus: false,
+			retry: 0,
+			staleTime: 30_000,
+		},
+	},
+});
+
+export default function App() {
+	return (
+		<QueryClientProvider client={queryClient}>
+			<ThemeProvider theme={theme}>
+				<CssBaseline />
+				<BrowserRouter>
+					<Routes>
+						<Route path="/" element={<HomePage />} />
+						<Route path="/asm01" element={<ProductsPage />} />
+					</Routes>
+				</BrowserRouter>
+			</ThemeProvider>
+		</QueryClientProvider>
+	);
 }
 
-export default App
+
