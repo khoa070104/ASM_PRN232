@@ -1,11 +1,14 @@
 using Application.DTOs;
 using Application.Interfaces;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
+using System.Security.Claims;
 
 namespace Api.Controllers
 {
 	[ApiController]
 	[Route("api/[controller]")]
+	[Authorize] // Require authentication for all endpoints
 	public class ProductsController : ControllerBase
 	{
 		private readonly IProductService _productService;
@@ -16,6 +19,7 @@ namespace Api.Controllers
 		}
 
 		[HttpGet]
+		[AllowAnonymous] // Allow anonymous access for listing products
 		public async Task<ActionResult<List<ProductReadDto>>> GetAll(CancellationToken ct)
 		{
 			var result = await _productService.GetAllAsync(ct);
@@ -23,6 +27,7 @@ namespace Api.Controllers
 		}
 
 		[HttpGet("{id}")]
+		[AllowAnonymous] // Allow anonymous access for getting product by id
 		public async Task<ActionResult<ProductReadDto>> GetById(Guid id, CancellationToken ct)
 		{
 			var result = await _productService.GetByIdAsync(id, ct);
@@ -30,6 +35,7 @@ namespace Api.Controllers
 		}
 
 		[HttpPost]
+		[Authorize(Roles = "Admin")] // Only Admin can create products
 		public async Task<ActionResult<ProductReadDto>> Create([FromBody] ProductCreateDto dto, CancellationToken ct)
 		{
 			var created = await _productService.CreateAsync(dto, ct);
@@ -37,6 +43,7 @@ namespace Api.Controllers
 		}
 
 		[HttpPut("{id}")]
+		[Authorize(Roles = "Admin")] // Only Admin can update products
 		public async Task<ActionResult<ProductReadDto>> Update(Guid id, [FromBody] ProductUpdateDto dto, CancellationToken ct)
 		{
 			var updated = await _productService.UpdateAsync(id, dto, ct);
@@ -44,6 +51,7 @@ namespace Api.Controllers
 		}
 
 		[HttpDelete("{id}")]
+		[Authorize(Roles = "Admin")] // Only Admin can delete products
 		public async Task<IActionResult> Delete(Guid id, CancellationToken ct)
 		{
 			await _productService.DeleteAsync(id, ct);

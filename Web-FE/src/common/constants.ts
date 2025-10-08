@@ -2,6 +2,9 @@ export const API_BASE_URL =
 	(import.meta.env.VITE_API_BASE_URL as string | undefined) ?? "http://localhost:5034";
 export const ROUTES = {
 	products: "/api/Products",
+	auth: "/api/Auth",
+    cart: "/api/Cart",
+    orders: "/api/Orders",
 } as const;
 
 export const ERROR_CODES = {

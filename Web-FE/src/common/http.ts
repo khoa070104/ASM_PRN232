@@ -23,6 +23,18 @@ const http: AxiosInstance = axios.create({
 	headers: { "Content-Type": "application/json", Accept: "application/json" },
 });
 
+// Add JWT token to requests
+http.interceptors.request.use(
+	(config) => {
+		const token = localStorage.getItem("auth_token");
+		if (token) {
+			config.headers.Authorization = `Bearer ${token}`;
+		}
+		return config;
+	},
+	(error) => Promise.reject(error)
+);
+
 http.interceptors.response.use(
 	(resp) => resp,
 	(error: AxiosError<ApiErrorBody>) => {

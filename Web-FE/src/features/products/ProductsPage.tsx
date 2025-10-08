@@ -5,13 +5,16 @@ import SearchIcon from "@mui/icons-material/Search";
 import { ProductsApi } from "./api";
 import { useNavigate } from "react-router-dom";
 import { MESSAGES } from "../../common/constants";
+import { useAuth } from "../auth/AuthContext";
 import type { ProductCreateDto, ProductReadDto, ProductUpdateDto } from "./types";
 import ProductsTable from "./ProductsTable";
 import ProductForm from "./ProductForm";
+import { CartApi } from "../cart/api";
 
 export default function ProductsPage() {
 	const qc = useQueryClient();
     const navigate = useNavigate();
+	const { isAdmin } = useAuth();
 	const [toast, setToast] = useState<{ open: boolean; message: string; severity: "success" | "error" }>({ open: false, message: "", severity: "success" });
 	const [openCreate, setOpenCreate] = useState(false);
 	const [editItem, setEditItem] = useState<ProductReadDto | null>(null);
@@ -55,6 +58,12 @@ export default function ProductsPage() {
 
 	const items = useMemo<ProductReadDto[]>(() => (Array.isArray(listQuery.data) ? listQuery.data : []), [listQuery.data]);
 
+	const addToCartMut = useMutation({
+		mutationFn: (productId: string) => CartApi.add({ productId, quantity: 1 }),
+		onSuccess: () => setToast({ open: true, message: "Đã thêm vào giỏ", severity: "success" }),
+		onError: (e: any) => setToast({ open: true, message: e.message ?? "Lỗi", severity: "error" }),
+	});
+
 	return (
 		<Container sx={{ py: 3 }}>
             <Stack direction="row" justifyContent="space-between" alignItems="center" mb={2}>
@@ -62,7 +71,14 @@ export default function ProductsPage() {
 					<Button onClick={() => navigate('/')}>Back</Button>
 					<Typography variant="h5">Products</Typography>
 				</Stack>
-				<Button variant="contained" onClick={() => setOpenCreate(true)}>Add</Button>
+				<Stack direction="row" spacing={1} alignItems="center">
+					{isAdmin && (
+						<Button variant="contained" onClick={() => setOpenCreate(true)}>Add</Button>
+					)}
+					<Button onClick={() => navigate('/cart')}>Cart</Button>
+					<Button onClick={() => navigate('/checkout')}>Checkout</Button>
+					<Button onClick={() => navigate('/orders')}>Orders</Button>
+				</Stack>
 			</Stack>
 
             <Alert severity="info" sx={{ mb: 2 }}>{MESSAGES.RENDER_FREE_TIER}</Alert>
@@ -94,6 +110,9 @@ export default function ProductsPage() {
 					onPreview={(it) => setPreviewItem(it)}
 					onEdit={(it) => setEditItem(it)}
                     onDelete={(id) => setConfirmDeleteId(id)}
+					canEdit={isAdmin}
+					canDelete={isAdmin}
+					onAddToCart={(id) => addToCartMut.mutate(id)}
 				/>
 			</Box>
 

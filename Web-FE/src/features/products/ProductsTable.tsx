@@ -7,9 +7,12 @@ type Props = {
     onPreview: (item: ProductReadDto) => void;
     onEdit: (item: ProductReadDto) => void;
     onDelete: (id: string) => void;
+	canEdit?: boolean;
+	canDelete?: boolean;
+	onAddToCart?: (id: string) => void;
 };
 
-export default function ProductsTable({ items, onPreview, onEdit, onDelete }: Props) {
+export default function ProductsTable({ items, onPreview, onEdit, onDelete, canEdit = true, canDelete = true, onAddToCart }: Props) {
 	return (
 		<Table sx={{
 			'& td, & th': { fontSize: '1.3rem', py: 2 },
@@ -42,8 +45,15 @@ export default function ProductsTable({ items, onPreview, onEdit, onDelete }: Pr
 							<TableCell>{item.updatedAtUtc ? dayjs(item.updatedAtUtc).format('YYYY-MM-DD HH:mm:ss') : '-'}</TableCell>
                             <TableCell>
 								<Button onClick={() => onPreview(item)} sx={{ mr: 1, '&:hover': { color: 'primary.main' }}}>PREVIEW</Button>
-								<Button onClick={() => onEdit(item)} sx={{ mr: 1, '&:hover': { color: 'info.main' }}}>EDIT</Button>
-								<Button color="error" onClick={() => onDelete(item.id)} sx={{ '&:hover': { color: 'error.dark' }}}>DELETE</Button>
+							{onAddToCart && (
+								<Button variant="outlined" onClick={() => onAddToCart(item.id)} sx={{ mr: 1 }}>ADD TO CART</Button>
+							)}
+								{canEdit && (
+									<Button onClick={() => onEdit(item)} sx={{ mr: 1, '&:hover': { color: 'info.main' }}}>EDIT</Button>
+								)}
+								{canDelete && (
+									<Button color="error" onClick={() => onDelete(item.id)} sx={{ '&:hover': { color: 'error.dark' }}}>DELETE</Button>
+								)}
                             </TableCell>
 						</TableRow>
 					))
