@@ -15,7 +15,7 @@ export default function LoginPage() {
         setError(null);
         try {
             const res = await AuthApi.login({ email, password });
-            login(res.token, { id: res.userId, email, role: res.role });
+            login(res.token, { email: res.email ?? email, role: res.role });
             navigate('/');
         } catch (e: any) {
             setError(e.message ?? 'Đăng nhập thất bại');

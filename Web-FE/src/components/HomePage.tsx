@@ -1,4 +1,4 @@
-import { Box, Container, List, ListItemButton, ListItemText, Typography, Stack } from "@mui/material";
+import { Box, Container, List, ListItemButton, ListItemText, Typography } from "@mui/material";
 import { useNavigate } from "react-router-dom";
 import { useAuth } from "../features/auth/AuthContext";
 
