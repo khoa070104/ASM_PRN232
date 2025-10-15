@@ -21,3 +21,15 @@ D:\Documents\ASM_PRN232\Web-BE\Domain\obj\Debug\net9.0\Domain.dll
 D:\Documents\ASM_PRN232\Web-BE\Domain\obj\Debug\net9.0\refint\Domain.dll
 D:\Documents\ASM_PRN232\Web-BE\Domain\obj\Debug\net9.0\Domain.pdb
 D:\Documents\ASM_PRN232\Web-BE\Domain\obj\Debug\net9.0\ref\Domain.dll
+E:\Documents\ASM_PRN232\Web-BE\Domain\bin\Debug\net9.0\Domain.deps.json
+E:\Documents\ASM_PRN232\Web-BE\Domain\bin\Debug\net9.0\Domain.dll
+E:\Documents\ASM_PRN232\Web-BE\Domain\bin\Debug\net9.0\Domain.pdb
+E:\Documents\ASM_PRN232\Web-BE\Domain\obj\Debug\net9.0\Domain.GeneratedMSBuildEditorConfig.editorconfig
+E:\Documents\ASM_PRN232\Web-BE\Domain\obj\Debug\net9.0\Domain.AssemblyInfoInputs.cache
+E:\Documents\ASM_PRN232\Web-BE\Domain\obj\Debug\net9.0\Domain.AssemblyInfo.cs
+E:\Documents\ASM_PRN232\Web-BE\Domain\obj\Debug\net9.0\Domain.csproj.CoreCompileInputs.cache
+E:\Documents\ASM_PRN232\Web-BE\Domain\obj\Debug\net9.0\Domain.sourcelink.json
+E:\Documents\ASM_PRN232\Web-BE\Domain\obj\Debug\net9.0\Domain.dll
+E:\Documents\ASM_PRN232\Web-BE\Domain\obj\Debug\net9.0\refint\Domain.dll
+E:\Documents\ASM_PRN232\Web-BE\Domain\obj\Debug\net9.0\Domain.pdb
+E:\Documents\ASM_PRN232\Web-BE\Domain\obj\Debug\net9.0\ref\Domain.dll

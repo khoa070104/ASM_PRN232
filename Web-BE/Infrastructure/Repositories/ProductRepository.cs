@@ -19,6 +19,22 @@ namespace Infrastructure.Repositories
 			return await _dbContext.Products.AsNoTracking().OrderByDescending(x => x.CreatedAtUtc).ToListAsync(cancellationToken);
 		}
 
+		public async Task<(IReadOnlyList<Product> Items, int Total)> GetPagedAsync(int page, int pageSize, string? query, CancellationToken cancellationToken = default)
+		{
+			var q = _dbContext.Products.AsNoTracking();
+			if (!string.IsNullOrWhiteSpace(query))
+			{
+				q = q.Where(x => x.Name.ToLower().Contains(query.ToLower()));
+			}
+			var total = await q.CountAsync(cancellationToken);
+			var items = await q
+				.OrderByDescending(x => x.CreatedAtUtc)
+				.Skip((page - 1) * pageSize)
+				.Take(pageSize)
+				.ToListAsync(cancellationToken);
+			return (items, total);
+		}
+
 		public async Task<Product?> GetByIdAsync(Guid id, CancellationToken cancellationToken = default)
 		{
 			return await _dbContext.Products.AsNoTracking().FirstOrDefaultAsync(x => x.Id == id, cancellationToken);

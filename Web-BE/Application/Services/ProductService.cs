@@ -24,6 +24,15 @@ namespace Application.Services
 			return _mapper.Map<List<ProductReadDto>>(entities);
 		}
 
+		public async Task<PagedResult<ProductReadDto>> GetPagedAsync(int page, int pageSize, string? query, CancellationToken cancellationToken = default)
+		{
+			if (page <= 0) page = 1;
+			if (pageSize <= 0) pageSize = 5;
+			var (items, total) = await _repository.GetPagedAsync(page, pageSize, query ?? string.Empty, cancellationToken);
+			var mapped = _mapper.Map<IReadOnlyList<ProductReadDto>>(items);
+			return new PagedResult<ProductReadDto>(mapped, total, page, pageSize);
+		}
+
 		public async Task<ProductReadDto> GetByIdAsync(Guid id, CancellationToken cancellationToken = default)
 		{
 			var entity = await _repository.GetByIdAsync(id, cancellationToken);

@@ -7,9 +7,12 @@ type Props = {
     onPreview: (item: ProductReadDto) => void;
     onEdit: (item: ProductReadDto) => void;
     onDelete: (id: string) => void;
+	canEdit?: boolean;
+	canDelete?: boolean;
+	onAddToCart?: (id: string) => void;
 };
 
-export default function ProductsTable({ items, onPreview, onEdit, onDelete }: Props) {
+export default function ProductsTable({ items, onPreview, onEdit, onDelete, canEdit = true, canDelete = true, onAddToCart }: Props) {
 	return (
 		<Table sx={{
 			'& td, & th': { fontSize: '1.3rem', py: 2 },
@@ -17,12 +20,12 @@ export default function ProductsTable({ items, onPreview, onEdit, onDelete }: Pr
 		}}>
 			<TableHead>
 				<TableRow>
-					<TableCell>Image</TableCell>
-					<TableCell>Name</TableCell>
-					<TableCell>Price</TableCell>
-					<TableCell>Created At</TableCell>
-					<TableCell>Updated At</TableCell>
-					<TableCell>Actions</TableCell>
+					<TableCell>Hình ảnh</TableCell>
+					<TableCell>Tên</TableCell>
+					<TableCell>Giá</TableCell>
+					<TableCell>Ngày tạo</TableCell>
+					<TableCell>Ngày cập nhật</TableCell>
+					<TableCell>Hành động</TableCell>
 				</TableRow>
 			</TableHead>
 			<TableBody>
@@ -41,15 +44,22 @@ export default function ProductsTable({ items, onPreview, onEdit, onDelete }: Pr
 							<TableCell>{dayjs(item.createdAtUtc).format('YYYY-MM-DD HH:mm:ss')}</TableCell>
 							<TableCell>{item.updatedAtUtc ? dayjs(item.updatedAtUtc).format('YYYY-MM-DD HH:mm:ss') : '-'}</TableCell>
                             <TableCell>
-								<Button onClick={() => onPreview(item)} sx={{ mr: 1, '&:hover': { color: 'primary.main' }}}>PREVIEW</Button>
-								<Button onClick={() => onEdit(item)} sx={{ mr: 1, '&:hover': { color: 'info.main' }}}>EDIT</Button>
-								<Button color="error" onClick={() => onDelete(item.id)} sx={{ '&:hover': { color: 'error.dark' }}}>DELETE</Button>
+							<Button onClick={() => onPreview(item)} sx={{ mr: 1, '&:hover': { color: 'primary.main' }}}>XEM</Button>
+							{onAddToCart && (
+							<Button variant="outlined" onClick={() => onAddToCart(item.id)} sx={{ mr: 1 }}>THÊM VÀO GIỎ</Button>
+							)}
+								{canEdit && (
+								<Button onClick={() => onEdit(item)} sx={{ mr: 1, '&:hover': { color: 'info.main' }}}>SỬA</Button>
+								)}
+								{canDelete && (
+								<Button color="error" onClick={() => onDelete(item.id)} sx={{ '&:hover': { color: 'error.dark' }}}>XOÁ</Button>
+								)}
                             </TableCell>
 						</TableRow>
 					))
 				) : (
 					<TableRow>
-						<TableCell colSpan={6}>No items</TableCell>
+						<TableCell colSpan={6}>Không có dữ liệu</TableCell>
 					</TableRow>
 				)}
 			</TableBody>

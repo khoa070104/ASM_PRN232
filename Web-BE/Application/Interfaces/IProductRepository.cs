@@ -9,6 +9,7 @@ namespace Application.Interfaces
 		Task<Product> AddAsync(Product entity, CancellationToken cancellationToken = default);
 		Task UpdateAsync(Product entity, CancellationToken cancellationToken = default);
 		Task DeleteAsync(Product entity, CancellationToken cancellationToken = default);
+		Task<(IReadOnlyList<Product> Items, int Total)> GetPagedAsync(int page, int pageSize, string? query, CancellationToken cancellationToken = default);
 	}
 }
 
